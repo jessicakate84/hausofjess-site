@@ -1,0 +1,87 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Upstairs at the Haus</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>:root{--navy:#0f1b2d;--deep:#0a1322;--cream:#f6f1e7;--gold:#b8955a;--goldl:#d4b47e;--mist:#c9c2b4}*{margin:0;padding:0;box-sizing:border-box;min-width:0}
+body{background:var(--navy);color:var(--cream);font-family:Inter,system-ui,sans-serif;font-weight:300;line-height:1.75;overflow-x:hidden}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;line-height:1.12;text-wrap:balance}
+.label{color:var(--gold);letter-spacing:.3em;font-size:11px;text-transform:uppercase}
+.hero{text-align:center;padding:72px max(16px,6vw) 56px;border-bottom:1px solid rgba(184,149,90,.4);background:radial-gradient(ellipse at 50% 0%,#1b2b45 0%,var(--navy) 70%)}
+.hero h1{font-size:clamp(44px,8vw,88px);margin-top:10px}.hero h1 em{color:var(--goldl)}
+.hero p{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(19px,2.6vw,24px);max-width:600px;margin:16px auto 0;color:#e8dfcd}
+.wrap{max-width:900px;margin:0 auto;padding:56px max(16px,5vw)}
+.intro{font-size:18px;max-width:640px;margin:0 auto 48px;text-align:center;color:#e8dfcd}
+.rooms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:stretch}
+.room{border:1px solid rgba(184,149,90,.5);padding:26px 24px;background:var(--deep)}.room h3{font-size:26px;margin:6px 0 10px;color:var(--cream)}.room p{font-size:15.5px;color:var(--mist)}
+@media(max-width:640px){.rooms{grid-template-columns:minmax(0,1fr)!important}}.stairs{margin-top:64px}.stairs h2{font-size:clamp(32px,5vw,44px);margin:8px 0 8px}.stairs>p{color:var(--mist);max-width:620px}
+.step{display:flex;gap:18px;align-items:baseline;border-top:1px solid rgba(184,149,90,.35);padding:22px 0}.step:last-child{border-bottom:1px solid rgba(184,149,90,.35)}
+.step .n{font-family:'Cormorant Garamond',Georgia,serif;color:var(--gold);font-size:26px;flex:none;width:36px}.step h3{font-size:25px}.step p{font-size:15px;color:var(--mist)}
+.soon{font-size:10.5px;letter-spacing:.25em;text-transform:uppercase;color:var(--goldl);border:1px solid rgba(184,149,90,.6);padding:3px 8px;margin-left:10px;white-space:nowrap;vertical-align:middle}
+.knock{text-align:center;margin-top:64px}.knock p{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;max-width:560px;margin:8px auto 0}.knock b{font-weight:400;color:var(--goldl)}
+footer{text-align:center;padding:36px 16px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;border-top:1px solid rgba(184,149,90,.4)}footer a{color:var(--cream)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.topnav{position:sticky;top:0;z-index:50;background:#0f1b2d;color:#f6f1e7;display:flex;flex-wrap:wrap;align-items:center;gap:6px 22px;padding:10px max(16px,4vw);border-bottom:1px solid #b8955a;font-family:Inter,system-ui,sans-serif}
+.topnav a{color:#f6f1e7;text-decoration:none}.tn-brand{font-family:'Cormorant Garamond',Georgia,serif;font-size:21px;letter-spacing:.18em;white-space:nowrap;font-weight:600}
+.tn-links{display:flex;gap:4px 20px;flex:1;justify-content:center;overflow-x:auto;scrollbar-width:none}.tn-links::-webkit-scrollbar{display:none}
+.tn-links a{font-size:11px;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;padding:12px 0;opacity:.85;border-bottom:1px solid transparent}
+.tn-links a:hover,.tn-links a[aria-current]{opacity:1;color:#d4b47e;border-bottom-color:#b8955a}
+.tn-rsvp{font-size:11px;letter-spacing:.25em;text-transform:uppercase;border:1px solid #b8955a;padding:11px 18px;white-space:nowrap;color:#d4b47e!important}.tn-rsvp:hover{background:#b8955a;color:#0f1b2d!important}
+.tn-brand,.tn-rsvp,.tn-links a{flex:none}.topnav a:focus-visible{outline:2px solid #b8955a;outline-offset:2px}html{scroll-padding-top:62px;scroll-behavior:smooth}
+@media(max-width:860px){html{scroll-padding-top:128px}.tn-links{order:3;flex-basis:100%;justify-content:flex-start;margin:0 calc(-1*max(16px,4vw));padding:0 max(16px,4vw);border-top:1px solid rgba(184,149,90,.35)}.tn-brand{margin-right:auto;font-size:19px}.tn-rsvp{padding:9px 14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}.repeat{margin-top:64px}.repeat h2{font-size:clamp(32px,5vw,44px);margin:8px 0 6px}.repeat>p{color:var(--mist)}.am{margin-top:22px}.am iframe{display:block;width:100%;max-width:760px;height:450px;border:0;border-radius:10px;overflow:hidden;background:transparent}.am-open{display:inline-block;margin-top:18px;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--goldl);text-decoration:none;border:1px solid var(--gold);padding:14px 22px}.am-open:hover{background:var(--gold);color:var(--navy)}.deck{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:34px;align-items:center;margin-top:26px;padding:28px;background:linear-gradient(160deg,#16243a,#0a1322);border:1px solid rgba(184,149,90,.55);border-radius:14px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 20px 40px rgba(0,0,0,.35)}
+.tt{position:relative;aspect-ratio:1;width:100%;max-width:300px;border:0;padding:0;background:#141c2a;border-radius:12px;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(184,149,90,.35)}
+.platter{position:absolute;inset:8%;border-radius:50%;background:#0c0c0e;box-shadow:0 6px 18px rgba(0,0,0,.6)}
+.vinyl{position:absolute;inset:3%;border-radius:50%;background:repeating-radial-gradient(circle,#111 0 2px,#1d1d1f 2px 3px),#111;display:grid;place-items:center;animation:spin 3.2s linear infinite}
+.vinyl::after{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 30deg,transparent 0 40deg,rgba(255,255,255,.08) 60deg,transparent 80deg 220deg,rgba(255,255,255,.06) 240deg,transparent 260deg)}
+.vl{width:36%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#f6f1e7 0 6%,#b8955a 7% 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#0f1b2d;z-index:1}
+.vl-t{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:.18em;font-size:clamp(12px,3.4vw,17px);margin-top:-14%}.vl-s{font-size:7.5px;letter-spacing:.2em;text-transform:uppercase;margin-top:22%}
+.arm{position:absolute;top:6%;right:7%;width:8%;height:58%;transform-origin:50% 6%;transform:rotate(24deg);transition:transform .6s ease}
+.arm::before{content:"";position:absolute;left:50%;top:0;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:#b8955a}
+.arm::after{content:"";position:absolute;left:50%;top:6px;width:4px;height:100%;margin-left:-2px;background:linear-gradient(#d4b47e,#8a6d3b);border-radius:2px;box-shadow:0 0 0 0 transparent}
+.paused .vinyl{animation-play-state:paused}.paused .arm{transform:rotate(4deg)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.disp-top{display:flex;justify-content:space-between;align-items:center}
+.eq{display:flex;gap:3px;align-items:flex-end;height:18px}.eq i{width:4px;background:#d4b47e;animation:eq 1s ease-in-out infinite}.eq i:nth-child(2){animation-delay:-.4s}.eq i:nth-child(3){animation-delay:-.7s}.eq i:nth-child(4){animation-delay:-.2s}.eq i:nth-child(5){animation-delay:-.55s}
+@keyframes eq{0%,100%{height:4px}50%{height:18px}}.paused .eq i{animation-play-state:paused}
+.np{margin:14px 0 10px;height:var(--nph,152px);overflow:hidden;display:flex;flex-direction:column;justify-content:flex-start}.np-a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.np-g{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.np-a{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(30px,4.6vw,42px);line-height:1.1;color:#f6f1e7;transition:opacity .35s}.np-g{font-size:14px;color:#c9c2b4;margin-top:6px;transition:opacity .35s}.fade .np-a,.fade .np-g{opacity:0}
+.dots{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}.dots button{width:9px;height:9px;padding:0;border-radius:50%;border:1px solid #b8955a;background:transparent;cursor:pointer}.dots button[aria-current]{background:#b8955a}
+.ctl{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.ctl>button{width:46px;height:46px;border-radius:50%;border:1px solid rgba(184,149,90,.7);background:transparent;color:#f6f1e7;font-size:12px;cursor:pointer;letter-spacing:-2px}.ctl>button:hover{background:rgba(184,149,90,.18)}
+.listen{display:inline-flex;align-items:center;gap:10px;margin-left:6px;padding:13px 20px;border-radius:999px;background:#b8955a;color:#0f1b2d!important;text-decoration:none;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:500}.listen svg{width:18px;height:18px}.listen:hover{background:#d4b47e}
+.deck button:focus-visible,.deck a:focus-visible{outline:2px solid #d4b47e;outline-offset:3px}
+@media(max-width:640px){.deck{grid-template-columns:minmax(0,1fr);padding:20px;gap:22px}.tt{max-width:240px;margin:0 auto}.listen{margin-left:0}}
+@media(prefers-reduced-motion:reduce){.vinyl,.eq i{animation:none}}</style></head><body><nav class="topnav" aria-label="Site"><a class="tn-brand" href="index.html">HAUS OF JESS</a><div class="tn-links"><a href="index.html#about">About</a><a href="index.html#practice">Practice</a><a href="index.html#model">The Model</a><a href="compounding-test.html">Compounding Test</a><a href="open-haus.html">Open Haus</a><a href="bio.html">Profile</a></div><a class="tn-rsvp" href="index.html#contact">RSVP</a></nav>
+<header class="hero"><div class="label">Haus of Jess · Life outside work</div><h1>Upstairs at the <em>Haus</em></h1><p>A look at life outside the boardroom: travel, music, art, and now and then the quiet part said out loud.</p></header>
+<main class="wrap">
+<p class="intro">Downstairs is business. Up here is everything else: the places I love, the things that keep me steady, and what it's actually like to walk into the room as me.</p>
+<div class="rooms"><div class="room"><div class="label">Home base</div><h3>Deep Ellum</h3><p>Home is Deep Ellum, Dallas&rsquo;s original music district, and it suits me. Strong coffee by morning, crates of vinyl by afternoon, live music loud enough to rattle your ribs by night. It&rsquo;s loud, it&rsquo;s creative, it&rsquo;s unapologetically itself, and its history runs deeper than most cities&rsquo;. Murals on every wall, a band on every corner, and not once has it asked permission to be fabulous. Honestly? Same.</p></div><div class="room"><div class="label">Sound</div><h3>Every genre, on repeat</h3><p>Gospel raised my standards: Fred Hammond, Kirk Franklin, and Hezekiah Walker and the Love Fellowship Crusade Choir, still undefeated. Since then it&rsquo;s been country, my friend Jenni&rsquo;s punk band Tomgirls, New York house, Taylor, and Olivia Dean on a loop I refuse to apologize for. At fourteen I agonized over East Coast or West Coast. A good bass line still gets me dancing.</p></div><div class="room"><div class="label">Travel</div><h3>Comfort, not status</h3><p>Main cabin or up front, I&rsquo;m flexible. But I&rsquo;m tall, darling, so legroom isn&rsquo;t a luxury. It&rsquo;s survival. Perfect travel: laptop closed, earbuds in, great music on. Overnight? Face mask, under-eye patches and a cheeky glass of wine. Arrive rested, and look like it. And when I get to choose where I sleep, it&rsquo;s a Ritz-Carlton. Every time.</p></div><div class="room"><div class="label">Art</div><h3>Art &amp; adventures</h3><p>Wherever I land, I go looking for art, the kind that stops you mid-step. In London a few weeks ago, Paul Delaroche&rsquo;s <i>The Execution of Lady Jane Grey</i> did exactly that at the National Gallery. It spoke to me in a way I&rsquo;m still unpacking, and every trip is better with a gallery stop. There&rsquo;s a whole piece coming on why that painting got me.</p></div></div>
+<section class="repeat"><div class="label">On repeat</div><h2>What I&rsquo;m listening to right now</h2><p>Straight from my phone. When I add a song, it shows up here.</p>
+<div class="deck">
+<button class="tt" id="tt-spin" type="button" aria-label="Start or stop the record">
+<span class="platter"><span class="vinyl" id="vinyl"><span class="vl"><span class="vl-t">HAUS</span><span class="vl-s">On Repeat</span></span></span></span>
+<span class="arm" id="arm"></span></button>
+<div class="disp">
+<div class="disp-top"><span class="label">Now spinning</span><span class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+<div class="np" aria-live="polite"><div class="np-a" id="np-a">Olivia Dean</div><div class="np-g" id="np-g">Soul &middot; has my heart right now</div></div>
+<div class="dots" id="dots"></div>
+<div class="ctl"><button type="button" id="prev" aria-label="Previous artist">&#9664;&#9664;</button><button type="button" id="play" aria-label="Pause">&#10074;&#10074;</button><button type="button" id="next" aria-label="Next artist">&#9654;&#9654;</button>
+<a class="listen" href="https://music.apple.com/us/playlist/on-repeat/pl.u-NpXm65WIm9gm3g" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l11-2v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="2.6" fill="currentColor"/><circle cx="17.5" cy="16" r="2.6" fill="currentColor"/></svg>Listen on Apple Music</a></div>
+</div></div>
+<div id="am-player" class="am"></div></section>
+<section class="stairs"><div class="label">On the stairs</div><h2>Pieces in progress</h2><p>Longer, more personal writing is on its way. These are the first ones I'm working on.</p>
+<div style="margin-top:24px">
+<div class="step"><span class="n">I</span><div><h3>All eyes on me<span class="soon">Coming soon</span></h3><p>On walking into a room at 6&rsquo;2&Prime; when every head has already turned, and learning to use it.</p></div></div>
+<div class="step"><span class="n">II</span><div><h3>Belonging is built<span class="soon">Coming soon</span></h3><p>What I do to feel I belong in the room, and what leaders can do so others feel it too.</p></div></div>
+<div class="step"><span class="n">III</span><div><h3>The reset<span class="soon">Coming soon</span></h3><p>How I come down after a hard week, and the rituals that get me back into the right head-space.</p></div></div>
+<div class="step"><span class="n">IV</span><div><h3>The painting I couldn&rsquo;t walk away from<span class="soon">Coming soon</span></h3><p>On Lady Jane Grey, a London afternoon, and why one painting stopped me in my tracks.</p></div></div>
+</div></section>
+<div class="knock"><div class="label">Knock first</div><p>If something up here resonates, I'd love to hear from you at <b>rsvp@hausofjess.com</b>.</p></div>
+</main>
+<footer><a href="index.html">Back downstairs</a> · © 2026 Jessica Sanders</footer><script>{if(/hausofjess\.com$/i.test(location.hostname)){const f=document.createElement('iframe');f.src="https://embed.music.apple.com/us/playlist/on-repeat/pl.u-NpXm65WIm9gm3g";f.title="On Repeat playlist on Apple Music";f.loading="lazy";f.allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write";f.setAttribute('sandbox','allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation');document.getElementById('am-player').appendChild(f);}}</script><script>{const A=[["Olivia Dean","Soul · has my heart right now"],["Sammy Rae &amp; The Friends","Big-band joy · instant mood lift"],["Tyler Childers","Country · Kentucky storytelling"],["Zach Bryan","Country · windows-down music"],["Tomgirls","Punk · my friend Jenni's new band"],["Hezekiah Walker &amp; LFCC","Gospel · the Love Fellowship Crusade Choir, an all-time favorite"],["Fred Hammond","Gospel · where my standards come from"],["Kirk Franklin","Gospel · pure energy"],["Taylor Swift","Pop · obviously"],["New York house","Dance · a forever favorite"],["&rsquo;90s &amp; 2000s rap","Still deciding: East Coast or West Coast"]];let i=0,on=true,t;const d=document.querySelector('.deck'),a=document.getElementById('np-a'),g=document.getElementById('np-g'),np=d.querySelector('.np'),dots=document.getElementById('dots'),pl=document.getElementById('play');
+const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+dots.innerHTML=A.map((x,k)=>'<button type="button" aria-label="Show '+x[0].replace(/&amp;/g,'and').replace(/&rsquo;/g,"'")+'"></button>').join('');
+const db=[...dots.children];db.forEach((b,k)=>b.addEventListener('click',()=>{show(k);restart();}));
+function show(k){i=(k+A.length)%A.length;np.classList.add('fade');setTimeout(()=>{a.innerHTML=A[i][0];g.innerHTML=A[i][1];np.classList.remove('fade');},rm?0:300);db.forEach((b,n)=>b.toggleAttribute('aria-current',n===i));}
+function restart(){clearInterval(t);if(on&&!rm)t=setInterval(()=>show(i+1),4200);}
+function setOn(v){on=v;d.classList.toggle('paused',!on);pl.innerHTML=on?'&#10074;&#10074;':'&#9654;';pl.setAttribute('aria-label',on?'Pause':'Play');restart();}
+document.getElementById('prev').addEventListener('click',()=>{show(i-1);restart();});
+document.getElementById('next').addEventListener('click',()=>{show(i+1);restart();});
+pl.addEventListener('click',()=>setOn(!on));document.getElementById('tt-spin').addEventListener('click',()=>setOn(!on));
+show(0);setOn(!rm);}</script></body></html>
