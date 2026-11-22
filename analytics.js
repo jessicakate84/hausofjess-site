@@ -6,7 +6,7 @@
 (function () {
   var GTAG_ID = 'GTM-5BKBRF83'; // Google tag from the GA4 data stream (Haus of Jess)
   var GA_ID = '';       // optional G- Measurement ID, only if the Google tag above is not used
-  var CLARITY_ID = 'zht024rrxz';  // Microsoft Clarity project (Haus of Jess)
+  var CLARITY_ID = 'zht6q9nhal';  // Microsoft Clarity project (Haus of Jess)
 
   var live = /(^|\.)hausofjess\.com$/i.test(location.hostname);
   var page = (location.pathname.split('/').pop() || 'index.html').replace('.html', '') || 'index';
