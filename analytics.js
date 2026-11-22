@@ -4,7 +4,8 @@
    Paste the two IDs below. Nothing loads until an ID is present, and nothing loads
    anywhere except on hausofjess.com, so previews never pollute the data. */
 (function () {
-  var GA_ID = '';       // e.g. 'G-XXXXXXXXXX'
+  var GTAG_ID = 'GTM-5BKBRF83'; // Google tag from the GA4 data stream (Haus of Jess)
+  var GA_ID = '';       // optional G- Measurement ID, only if the Google tag above is not used
   var CLARITY_ID = '';  // e.g. 'abcd1234ef'
 
   var live = /(^|\.)hausofjess\.com$/i.test(location.hostname);
@@ -14,7 +15,13 @@
   function gtag() { window.dataLayer.push(arguments); }
   window.gtag = window.gtag || gtag;
 
-  if (live && GA_ID) {
+  if (live && GTAG_ID) {
+    var gt = document.createElement('script');
+    gt.async = true;
+    gt.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTAG_ID;
+    document.head.appendChild(gt);
+    gtag('js', new Date());
+  } else if (live && GA_ID) {
     var g = document.createElement('script');
     g.async = true;
     g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
@@ -35,7 +42,7 @@
     params = params || {};
     params.page = params.page || page;
     if (!live) { try { console.debug('[analytics]', name, params); } catch (e) {} return; }
-    try { if (GA_ID) window.gtag('event', name, params); } catch (e) {}
+    try { if (GTAG_ID || GA_ID) window.gtag('event', name, params); } catch (e) {}
     try { if (CLARITY_ID && window.clarity) window.clarity('event', name); } catch (e) {}
   }
   function tag(key, value) {
