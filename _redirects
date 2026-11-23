@@ -1,9 +1,4 @@
-# Coming-soon mode: every page shows the splash. The full site is kept in this repo.
-# To bring the site back, delete this file (or the last line) and redeploy.
-/ring-face.png          /ring-face.png          200!
-/favicon.png            /favicon.png            200!
-/apple-touch-icon.png   /apple-touch-icon.png   200!
-/analytics.js           /analytics.js           200!
-/og/*                   /og/:splat              200!
+# Old Upstairs links go to the homepage.
 /upstairs.html          /                       301!
-/*                      /coming-soon.html       200!
+# Coming-soon mode (off). To turn it back on, add this line:
+# /*                      /coming-soon.html       200!
