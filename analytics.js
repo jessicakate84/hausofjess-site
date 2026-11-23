@@ -132,6 +132,7 @@
     if ((el = t.closest('.chip'))) { track('note_filter', { filter: el.dataset.f }); return; }
     if ((el = t.closest('.cp'))) { track('note_copy_link', { note: el.dataset.s }); return; }
     if ((el = t.closest('a.li'))) { track('note_share_linkedin', { note: el.dataset.s }); return; }
+    if ((el = t.closest('.sys-cta'))) { track('rsvp_click', { location: 'model' }); return; }
     if ((el = t.closest('a[href^="mailto:"]'))) {
       var sec = el.closest('section, article, .res, footer, .take');
       track('contact_click', { location: (sec && (sec.id || sec.className)) || 'page', label: text(el) });
