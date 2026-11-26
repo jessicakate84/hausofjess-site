@@ -125,6 +125,11 @@ footer{background:var(--deep);color:var(--mist);border-top:1px solid rgba(184,14
 @media(min-width:861px){.deck-hint{visibility:hidden}}
 .pcard .ph{display:flex;flex-direction:column}
 .fw-nav .fw-dot:hover{background:none}
+
+/* Field Notes: headings and text line up across cards */
+.deck3{grid-template-rows:auto auto;align-items:stretch}
+.deck3>.card{display:grid;grid-row:span 2;grid-template-rows:subgrid;row-gap:0;align-content:start}
+.deck3>.card h4{align-self:start}
 </style></head><body id="top">
 <nav class="topnav" aria-label="Site"><a class="tn-brand" href="#top">HAUS OF JESS</a><div class="tn-links"><a href="#about">About</a><a href="#model">The Model</a><a href="#practice">Practice</a><a href="compounding-test.html">Compounding Test</a><a href="open-haus.html">Open Haus</a><a href="bio.html">Profile</a></div><a class="tn-rsvp" href="#contact">RSVP</a></nav>
 <header class="mast"><img class="crest" src="ring-face.png" alt="Crest inspired by the arms of Sanders of Ewell" width="96" height="120"><div class="motto serif" lang="la">Defensor Populi</div><h1>HAUS OF JESS</h1><div class="fullname">Jessica Kate Sanders</div></header>
@@ -200,5 +205,5 @@ document.querySelectorAll('[data-deck]').forEach(function(dk){
  dk.addEventListener('scroll',function(){window.requestAnimationFrame(upd)},{passive:true});upd();
 });
 })();
-</script><script>(function(){function eq(){var hs=document.querySelectorAll('.pcard .ph');hs.forEach(function(h){h.style.minHeight=''});var m=0;hs.forEach(function(h){m=Math.max(m,h.offsetHeight)});hs.forEach(function(h){h.style.minHeight=m+'px'})}
+</script><script>(function(){function eq(){var ts=document.querySelectorAll('.pcard .ph h4');ts.forEach(function(h){h.style.minHeight=''});var tm=0;ts.forEach(function(h){tm=Math.max(tm,h.offsetHeight)});ts.forEach(function(h){h.style.minHeight=tm+'px'});var hs=document.querySelectorAll('.pcard .ph');hs.forEach(function(h){h.style.minHeight=''});var m=0;hs.forEach(function(h){m=Math.max(m,h.offsetHeight)});hs.forEach(function(h){h.style.minHeight=m+'px'})}
 eq();window.addEventListener('resize',eq);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(eq);window.addEventListener('load',eq)})();</script></body></html>
